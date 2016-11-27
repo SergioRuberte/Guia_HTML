@@ -1,1 +1,571 @@
-
+<!doctype html>
+<html lang=es>
+	<head>
+		<title>Guía HTML</title>
+	</head>
+	<body>
+		<h1>Guía HTML</h1>
+		<nav>
+			<a href="#HTML">HTML</a>|
+			<a href="#HEAD">HEAD</a> |
+			<a href="#BODY">BODY</a> |
+	</nav>
+	
+	<h2 id="HTML">Elementos de HTLM</h2>
+		<nav>
+			<a href="#EtHTML">Etiqueta &lthtml&gt</a>|
+			<a href="#EtHEAD">Etiqueta &lthead&gt</a> |
+			<a href="#EtBODY">Etiqueta &ltbody&gt</a> |
+	</nav>		
+		<h4 id="EtHTML">Etiqueta &lthtml&gt</h4> <!-- html -->
+			<table border=1 cellpadding=4>
+				<tr>
+					<td><b>Definición:</b>
+					<td> Delimita el contenido del documento
+				<tr>
+					<td><b>Etiquetas:</b>
+					<td> Apertura y cierre opcionales
+				<tr>
+					<td><b>Atributos:</b>
+					<td><font color =red> dir, lang</font>	
+						<p> <font color =red> dir</font>: ltr(izquierda a derecha), rtl(derecha a izquierda)<br>
+							Indica el sentido de lectura de la página.</p>
+						<p> <font color =red> lang</font>: Indica el idioma del documento.</p>
+				<tr>
+					<td><b>Contenido:</b>
+						<td><p>&lthead&gt y &ltbody&gt </p>
+			</table>
+		<h4 id="EtHEAD">Etiqueta &lthead&gt</h4> <!-- head -->
+			<table border=1 cellpadding=4>
+				<tr>
+					<td><b>Definición:</b>
+					<td> Delimita la cabecera del documento
+				<tr>
+					<td><b>Etiquetas:</b>
+					<td> Apertura y cierre opcionales
+				<tr>
+					<td><b>Atributos:</b>
+					<td><font color =red> dir, lang, profile</font>	
+						<p> <font color =red> profile</font>:<b> URI</b> (dirección web completa del recurso) <br>
+						Indica dónde están los perfiles para interpretar los elementos meta.</p>
+				<tr>
+					<td><b>Contenido:</b>
+						<td><p>&lttitle&gt,&ltbase&gt,&ltmeta&gt,&ltlink&gt,&ltobject&gt,&ltscript&gt y &ltstyle&gt <br>
+						Solamente elemento <b>&lttitle&gt</b> es obligatorio</p>
+			</table>		
+		<h4 id="EtBODY">Etiqueta &ltbody&gt</h4> <!-- body -->
+			<table border=1 cellpadding=4>
+				<tr>
+					<td><b>Definición:</b>
+					<td> Delimita el cuerpo del documento
+				<tr>
+					<td><b>Etiquetas:</b>
+					<td> Apertura y cierre opcionales
+				<tr>
+					<td><b>Atributos:</b>
+					<td><font color =red> dir, lang, id, class, title, style, onload, onunload</font>	
+						<p> <font color =red> id</font>: permite asignar un nombre único a un elemento</p>
+						<p> <font color =red> class</font>: permite asignar un nombre de clase a un elemento</p>
+						<p> <font color =red> title</font>: agrega un comentario a un elemento (se muestra al situar el ratón sobre el elemento)</p>
+						<p> <font color =red> style</font>: aplica información de estilo a un elemento</p>
+						<p> <font color =red> onload</font>: especifica el evento que ocurrirá al finalizar la carga</p>
+						<p> <font color =red> onunload</font>: especifica el evento que ocurre al eliminar un elemento de una ventana o marco</p>
+				<tr>
+					<td><b>Contenido:</b>
+						<td><p>&lthead&gt y &ltbody&gt </p>
+			</table>
+	<h2 id="HTML">Elementos de la cabecera</h2>
+		<nav>
+			<a href="#EtTITLE">Etiqueta &lttitle&gt</a>|
+			<a href="#EtBASE">Etiqueta &ltbase&gt</a> |
+			<a href="#EtMETA">Etiqueta &ltmeta&gt</a> |
+			<a href="#EtLINK">Etiqueta &ltlink&gt</a>|
+			<a href="#EtSCRIPT">Etiqueta &ltscript&gt</a> |
+			<a href="#EtSTYLE">Etiqueta &ltstyle&gt</a> |			
+		</nav>
+		<h4 id="EtTITLE">Etiqueta &lttitle&gt</h4> <!-- title -->
+			<table border=1 cellpadding=4>
+				<tr>
+					<td><b>Definición:</b>
+					<td> Indica el título en la pestaña del navegador.
+				<tr>
+					<td><b>Etiquetas:</b>
+					<td> Apertura y cierre obligatorias
+				<tr>
+					<td><b>Atributos:</b>
+					<td><font color =red> dir, lang </font>	
+				<tr>
+					<td><b>Ejemplo:</b>
+						<td><p><b>&lthead&gt</b><br>
+							<b>&lttitle&gt</b> Titulo de la página <b>&lt/title&gt </b><br>
+						<b>&lt/head&gt</b>	
+			</table>
+		<h4 id="EtBASE">Etiqueta &ltbase&gt</h4> <!-- base -->
+			<table border=1 cellpadding=4>
+				<tr>
+					<td><b>Definición:</b>
+					<td> Indica la dirección raíz el sitio web, la cual permiete resolver las direcciones relativas.
+				<tr>
+					<td><b>Etiquetas:</b>
+					<td> Sin etiqueta de cierre.
+				<tr>
+					<td><b>Atributos:</b>
+					<td><font color =red> href </font>
+					<p> <font color =red> href</font>: se usa siempre para indicar la dirección del documento</p>
+				<tr>
+					<td><b>Ejemplo:</b>
+						<td><p><b>&ltbase href="http://www.paginaweb.com"&gt </b><br>
+						En caso de tener la direccion relativa "/Articulo1.html" se completaría como "http://www.paginaweb.com/Articulo1.html"
+						
+			</table>
+		<h4 id="EtMETA">Etiqueta &ltmeta&gt</h4> <!-- meta -->
+			<table border=1 cellpadding=4>
+				<tr>
+					<td><b>Definición:</b>
+					<td> Indica un conjunto de propiedades generales del documento.
+				<tr>
+					<td><b>Etiquetas:</b>
+					<td> Sin etiqueta de cierre.
+				<tr>
+					<td><b>Atributos:</b>
+					<td><font color =red> lang, dir, name, content, http-equiv</font>
+					<p> <font color =red> name</font>: Indica el nombre de una propiedad</p>
+					<p> <font color =red> content</font>: Contiene el valor de la propiedad indicada en name</p>
+					<p> <font color =red> http-equiv</font>: Indica al navegador una propiedad en forma de http como si la hubiera generado el servidor web</p>					
+				<tr>
+					<td><b>Ejemplo:</b>
+						<td><p>&ltmeta name="descripcion" content="Guia HTML"&gt<br>
+							&ltmeta name="date" content="23/11/2016"&gt					
+			</table>
+		<h4 id="EtLINK">Etiqueta &ltlink&gt</h4> <!-- link -->
+			<table border=1 cellpadding=4>
+				<tr>
+					<td><b>Definición:</b>
+					<td> Vincula otro documento indicado por href.
+				<tr>
+					<td><b>Etiquetas:</b>
+					<td> Sin etiqueta de cierre.
+				<tr>
+					<td><b>Atributos:</b>
+					<td><font color =red> lang, dir, class, id, style, title, charset, href, hreflang, type, rel, rev, media</font>
+						<p> <font color =red> charset</font>: Establece el conjunto de caracteres para el documento</p>
+						<p> <font color =red> href</font>: Indica la URI del documento vinculado</p>
+						<p> <font color =red> hreflang</font>: Indica el lenguaje del documento vinculado</p>
+						<p> <font color =red> type</font>: Indica el tipo de documento vinculado</p>
+						<p> <font color =red> rel</font>: Estable la relacion origen-destino entre los documentos</p>
+						<p> <font color =red> rev</font>: Establece un vínculo inverso. (Destino-Origen)</p>
+						<p> <font color =red> media</font>: Indica el medio al que se van a proyectar los datos.</p>				
+			</table>
+		<h4 id="EtSCRIPT">Etiqueta &ltscript&gt</h4> <!-- script -->
+			<table border=1 cellpadding=4>
+				<tr>
+					<td><b>Definición:</b>
+					<td> Inserta un script en el documento.
+				<tr>
+					<td><b>Etiquetas:</b>
+					<td> Las etiquetas de apertura y cierre son obligatorias.
+				<tr>
+					<td><b>Atributos:</b>
+					<td><font color =red> charset, type, src</font>
+					<p> <font color =red> charset</font>: codificacion de caracteres incidada por src</p>
+					<p> <font color =red> type</font>: Indica el lenguaje de programación utilizado</p>
+					<p> <font color =red> src</font>: indcia la URI donde está ubicado el script externo</p>
+				<tr>
+					<td><b>Ejemplo:</b>
+						<td><p><b>Interno</b>: &ltscript type="text/javascript">&gt . . . . &lt/script&gt<br>
+							<b>Externo</b>: &ltscript type="text/javascript" src="https://www.google.com/jsapi"&gt &lt/script&gt
+			</table>
+		<h4 id="EtSTYLE">Etiqueta &ltstyle&gt</h4> <!-- style -->
+			<table border=1 cellpadding=4>
+				<tr>
+					<td><b>Definición:</b>
+					<td> Permite insertar una hoja de estilo.
+				<tr>
+					<td><b>Etiquetas:</b>
+					<td> Las etiquetas de apertura y cierre son obligatorias.
+				<tr>
+					<td><b>Atributos:</b>
+					<td><font color =red> lang, dir, type, media, title</font>
+					<p> <font color =red> type</font>: Indica el tipo de lenguajes</p>
+					<p> <font color =red> type</font>: Indica el tipo de medio al que se dirige la información</p>
+					<p> <font color =red> title</font>: Texto descriptivo del estilo</p>
+				<tr>
+					<td><b>Ejemplo:</b>
+						<td><p>&ltstyle type="text/css"&gt<br>
+							body &#123 <br>
+							margin-left: 40px; margin-right: 40px; <br>
+							margin-top: 40px; <br>
+							&#125 <br>
+							&lt/style&gt
+			</table>
+	<h2 id="BODY">Elementos del cuerpo</h2>
+		<nav>
+			<a href="#TEXTO">Manejo de Texto</a>
+			<ul>
+				<li><a href="#EtH"> Titulos <a>
+				<li><a href="#EtP"> Párrafo <a>
+				<li><a href="#EtBR"> Salto de Línea <a>
+				<li><a href="#EtFONTTYPE"> Formato de Texto <a>
+			</ul>
+			<a href="#LISTAS">Manejo de Listas</a> 
+			<ul>
+				<li><a href="#EtUL"> Listas no Ordenadas <a>
+				<li><a href="#EtOL"> Listas Ordenadas <a>
+				<li><a href="#EtDL"> Listas de Definición <a>
+			</ul>
+			<a href="#ENLACES">Manejo de Enlaces</a>
+			<ul>
+				<li><a href="#EtA"> Etiqueta &lta&gt <a>
+			</ul>
+			<a href="#CONTENIDO">Manejo de Contenido</a>
+			<ul>
+				<li><a href="#EtDIV"> Etiqueta &ltdiv&gt <a>
+			</ul>
+			<a href="#IMAGENES">Manejo de Imagenes</a>
+			<ul>
+				<li><a href="#EtIMG"> Imágenes <a>
+				<li><a href="#EtMAP"> Mapas <a>
+				<li><a href="#EtAREA"> Áreas <a>
+			</ul>
+			<a href="#TABLAS">Manejo de Tablas</a>
+			<ul>
+				<li><a href="#EtTABLE"> Tablas <a>
+				<li><a href="#EtTR"> Etiqueta &lttr&gt <a>
+				<li><a href="#EtTDTH"> Etiquetas &lttd&gt &ltth&gt<a>
+				<li><a href="#EtCAPTION"> Etiqueta &ltcaption&gt <a>
+				<li><a href="#EtHEAD_BODY_FOOT"> Etiquetas &ltthead&gt &lttbody&gt &lttfoot&gt <a>
+				<li><a href="#EtCOLGROUP"> Etiqueta &ltcolgroup&gt <a>				
+			</ul>		
+		</nav>
+		<h3 id="TEXTO"> Manejo de texto </h3>
+		
+		<h4 id="EtH">Etiquetas &lth1&gt &lth2&gt &lth3&gt &lth4&gt &lth5&gt &lth6&gt</h4> <!-- h1,h2,h3,h4,h5,h6 -->
+			<table border=1 cellpadding=4>
+				<tr>
+					<td><b>Definición:</b>
+					<td> Establecen encabezados y distintos tamaños de titulos
+				<tr>
+					<td><b>Etiquetas:</b>
+					<td> Apertura y cierre obligatorias
+				<tr>
+					<td><b>Atributos:</b>
+					<td><font color =red></font>	
+				<tr>
+					<td><b>Ejemplo:</b>
+						<td><p><b>&lth1&gt</b> Texto en h1 <b>&lt/h1&gt</b> Resultado: <h1>Texto en h1</h1><br>
+							   <b>&lth2&gt</b> Texto en h2 <b>&lt/h2&gt</b> Resultado: <h2>Texto en h2</h2><br>
+							   <b>&lth3&gt</b> Texto en h3 <b>&lt/h3&gt</b> Resultado: <h3>Texto en h3</h3><br>
+							   <b>&lth4&gt</b> Texto en h4 <b>&lt/h4&gt</b> Resultado: <h4>Texto en h4</h4><br>
+							   <b>&lth5&gt</b> Texto en h5 <b>&lt/h5&gt</b> Resultado: <h5>Texto en h5</h5><br>
+							   <b>&lth6&gt</b> Texto en h6 <b>&lt/h6&gt</b> Resultado: <h6>Texto en h6</h6><br>
+			</table>
+		<h4 id="EtP">Etiqueta &ltp&gt</h4> <!-- p -->
+			<table border=1 cellpadding=4>
+				<tr>
+					<td><b>Definición:</b>
+					<td> Establece una agrupación de líneas de texto en un párrafo.
+				<tr>
+					<td><b>Etiquetas:</b>
+					<td> Etiqueta de cierre opcional.
+				<tr>
+					<td><b>Atributos:</b>
+					<td><font color =red></font>	
+				<tr>
+					<td><b>Ejemplo:</b>
+						<td><ul>
+								<li>Cada párrafo HTML se compone de una única línea de texto.
+								<li>Los saltos de línea son explícitos mediante la etiqueta <b>&ltbr&gt</b>
+							</ul>
+			</table>
+		<h4 id="EtBR">Etiqueta &ltbr&gt</h4> <!-- br -->
+			<table border=1 cellpadding=4>
+				<tr>
+					<td><b>Definición:</b>
+					<td> Permite introducir saltos de línea explícito dentro de un mismo párrafo.
+				<tr>
+					<td><b>Etiquetas:</b>
+					<td> Sin etiqueta de cierre.
+			</table>
+		<h4 id="EtHR">Etiqueta &lthr&gt</h4> <!-- hr -->
+			<table border=1 cellpadding=4>
+				<tr>
+					<td><b>Definición:</b>
+					<td> Permite separar texto con una línea horizontal visible dentro de un mismo párrafo.
+				<tr>
+					<td><b>Etiquetas:</b>
+					<td> Sin etiqueta de cierre.
+			</table>
+		<h4 id="EtFONTTYPE">Etiquetas &ltb&gt &lti&gt &ltbig&gt &ltsmall&gt &lts&gt &ltstrike&gt &lttt&gt &ltu&gt </h4> <!-- b, i, big, small, s, strike, tt, u -->
+			<table border=1 cellpadding=4>
+				<tr>
+					<td><b>Definición:</b>
+					<td> Permiten establecer los diferentes estilos de fuente.<br>
+					<b>b</b>: Negrita  <b>i</b>: itálica <b>big</b>: Tamaño grande <b>small</b>: Tamaño pequeño <br>
+					<b>s</b> y <b>strike</b>: Tachado <b>tt</b>: Teletipo <b>u</b>: Subrayado 
+				<tr>
+					<td><b>Etiquetas:</b>
+					<td> Sin etiqueta de cierre.
+			</table>
+		<h4 id="EtFONT">Etiqueta &ltfont&gt</h4> <!-- font -->
+			<table border=1 cellpadding=4>
+				<tr>
+					<td><b>Definición:</b>
+					<td> Permite establecer el tamaño, el color y la fuente para el texto.
+				<tr>
+					<td><b>Etiquetas:</b>
+					<td> Apertura y cierre obligatorias.
+				<tr>
+					<td><b>Atributos:</b>
+					<td><font color =red>size, color, face</font>
+			</table>
+		<h4 id="EtPRE">Etiqueta &ltpre&gt</h4> <!-- font -->
+			<table border=1 cellpadding=4>
+				<tr>
+					<td><b>Definición:</b>
+					<td> Permite introducir texto con un formato propio.
+				<tr>
+					<td><b>Etiquetas:</b>
+					<td> Apertura y cierre obligatorias.
+				<tr>
+					<td><b>Atributos:</b>
+					<td><font color =red>width</font>
+					<p> <font color =red> width</font>: Indica el ancho del bloque</p>
+			</table>
+		<h3 id="LISTAS"> Manejo de listas </h3>
+		
+		<h4 id="EtUL">Lista no ordenada &ltul&gt</h4> <!-- ul -->
+			<table border=1 cellpadding=4>
+				<tr>
+					<td><b>Definición:</b>
+					<td> Se contruyen con <b>&ltul&gt</b> y su contenido está formado por <b>&ltli&gt</b>
+				<tr>
+					<td><b>Etiquetas:</b>
+					<td> Apertura y cierre obligatorias
+				<tr>
+					<td><b>Atributos:</b>
+					<td><font color =red>compact</font>
+						<p> <font color =red> width</font>: Indica que la lista debe compactarse</p>
+				<tr>
+					<td><b>Ejemplo:</b>
+						<td><p><b>&ltul&gt</b><br>
+							&nbsp &nbsp &nbsp<b>&ltli&gt</b> Elemento1 <br>
+							&nbsp &nbsp &nbsp<b>&ltli&gt</b> Elemento2 <br>
+					<b>&ltul&gt</b> <br>
+					Resultado: <br>
+					<ul>
+							<li> Elemento1
+							<li> Elemento2
+					</ul>
+			</table>
+		<h4 id="EtOL">Lista ordenada &ltol&gt</h4> <!-- ol -->
+			<table border=1 cellpadding=4>
+				<tr>
+					<td><b>Definición:</b>
+					<td> Se contruyen con <b>&ltol&gt</b> y su contenido está formado por <b>&ltli&gt</b>
+				<tr>
+					<td><b>Etiquetas:</b>
+					<td> Apertura y cierre obligatorias
+				<tr>
+					<td><b>Atributos:</b>
+					<td><font color =red>compact</font>
+						<p> <font color =red> width</font>: Indica que la lista debe compactarse</p>
+				<tr>
+					<td><b>Ejemplo:</b>
+						<td><p><b>&ltol&gt</b><br>
+							&nbsp &nbsp &nbsp<b>&ltli&gt</b> Elemento1 <br>
+							&nbsp &nbsp &nbsp<b>&ltli&gt</b> Elemento2 <br>
+					<b>&ltol&gt</b> <br>
+					Resultado: <br>
+					<ol>
+							<li> Elemento1
+							<li> Elemento2
+					</ol>
+			</table>
+		<h4 id="EtDL">Lista de definición &ltdl&gt</h4> <!-- dl -->
+			<table border=1 cellpadding=4>
+				<tr>
+					<td><b>Definición:</b>
+					<td> Se contruyen con <b>&ltdl&gt</b> y su contenido está formado por <b>&ltdt&gt</b> y <b>&ltdd&gt</b>
+				<tr>
+					<td><b>Etiquetas:</b>
+					<td> Apertura y cierre obligatorias
+				<tr>
+					<td><b>Atributos:</b>
+					<td><font color =red></font>
+				<tr>
+					<td><b>Ejemplo:</b>
+					<td>
+			</table>
+		<h3 id="ENLACES"> Manejo de enlaces </h3>
+		
+		<h4 id="EtA">Etiqueta &lta&gt</h4> <!-- a -->
+			<table border=1 cellpadding=4>
+				<tr>
+					<td><b>Definición:</b>
+					<td> Se utiliza para establecer el origen o el destino de un hipervínculo.
+				<tr>
+					<td><b>Etiquetas:</b>
+					<td> Apertura y cierre obligatorias
+				<tr>
+					<td><b>Atributos:</b>
+					<td><font color =red> charset, type, name, href, hreflang, rel, rev, accesskey, shape, coords, tabindex, onfocus, onblur</font>
+					<p> <font color =red> name</font>: Permite nombrar un marcador, que será el destino del enlace</p>
+					<p> <font color =red> href</font>: Indica la URI destino del hipervínculo</p>
+					<p> <font color =red> accesskey</font>: Asigna una tecla única de acceso al hipervínculo</p>
+					<p> <font color =red> shape</font>: Establece la forma de la imagen que contiene el hipervínculo</p>
+					<p> <font color =red> coords</font>: Estable la posición</p>
+					<p> <font color =red> target</font>: Estable el marco de destino. (Valores:_blank, _self, _parent, _top)</p>
+					<p> <font color =red> tabindex</font>: Establece el número de orden</p>
+				<tr>
+					<td><b>Ejemplo:</b>
+					<td>
+			</table>
+		<h3 id="CONTENIDO"> Agrupación de contenido </h3>
+		
+		<h4 id="EtDIV">Etiqueta &ltdiv&gt</h4> <!-- div -->
+			<table border=1 cellpadding=4>
+				<tr>
+					<td><b>Definición:</b>
+					<td> Agrupa varios elementos dentro de un bloque, así podemos identificarlo con un nombre o clase, podemos darle estilo, etc.
+				<tr>
+					<td><b>Etiquetas:</b>
+					<td> Apertura y cierre obligatorias
+				<tr>
+					<td><b>Atributos:</b>
+					<td><font color =red> align</font>
+				<tr>
+					<td><b>Ejemplo:</b>
+					<td>
+			</table>
+		<h3 id="IMAGENES"> Imagenes </h3>
+		
+		<h4 id="EtIMG">Etiqueta &ltimg&gt</h4> <!-- img -->
+			<table border=1 cellpadding=4>
+				<tr>
+					<td><b>Definición:</b>
+					<td> Sirve para insertar una imagen determinada por el atributo src.
+				<tr>
+					<td><b>Etiquetas:</b>
+					<td> Sin etiqueta de cierre.
+				<tr>
+					<td><b>Atributos:</b>
+					<td><font color =red> src, alt, name, height, width, usemap, ismap</font>
+					<p> <font color =red> src</font>: Indica la URI de la imagen.</p>
+					<p> <font color =red> alt</font>: Texto descriptivo de la imagen. Aparece en caso de no poder visualizar la imagen.</p>
+					<p> <font color =red> name</font>: Identifica la imagen para su manejo con hojas de estilo o scripts</p>
+					<p> <font color =red> height, width</font>: altura y anchura con la que el navegador visualizará la imagen</p>
+					<p> <font color =red> usemap</font>: Asocia a la imagen un mapa de imagenes.</p>
+					<p> <font color =red> ismap</font>: Permite definir un mapa de imágenes.</p>
+					
+				<tr>
+					<td><b>Ejemplo:</b>
+					<td>
+			</table>	
+		<h4 id="EtMAP">Etiqueta &ltmap&gt</h4> <!-- map -->
+			<table border=1 cellpadding=4>
+				<tr>
+					<td><b>Definición:</b>
+					<td> Sirve para crear un mapa de imágenes en el lado cliente.
+				<tr>
+					<td><b>Etiquetas:</b>
+					<td> Apertura y cierre obligatorias.
+				<tr>
+					<td><b>Atributos:</b>
+					<td><font color =red>name</font>
+			</table>
+		<h4 id="EtAREA">Etiqueta &ltarea&gt</h4> <!-- area -->
+			<table border=1 cellpadding=4>
+				<tr>
+					<td><b>Definición:</b>
+					<td> Permite especificar una región geométrica del mapa y el vínculo asociado a esa región.
+				<tr>
+					<td><b>Etiquetas:</b>
+					<td> Sin etiqueta de cierre.
+				<tr>
+					<td><b>Atributos:</b>
+					<td><font color =red> shape, coords, href, alt, tabindex, accesskey, onfocus, onblur</font>
+					<p> <font color =red> shape</font>: Especifica el tipo de región con los valores: <b>default, rect, circle, poly</b></p>
+					<p> <font color =red> coords</font>: Posición en palntalla, valores de longitud partiendo de la esquina superior izquierda de la pantalla y separas por comas.</p>
+				<tr>
+					<td><b>Ejemplo:</b>
+					<td>
+			</table>
+		<h3 id="TABLAS"> Tablas </h3>
+		<h4 id="EtTABLE">Etiqueta &lttable&gt</h4> <!-- area -->
+			<table border=1 cellpadding=4>
+				<tr>
+					<td><b>Definición:</b>
+					<td> Inserta una tabla de tamaño variable.
+				<tr>
+					<td><b>Etiquetas:</b>
+					<td> Apertura y cierre obligatorias.
+				<tr>
+					<td><b>Atributos:</b>
+					<td><font color =red> summary, width, border, frame, rules, cellspacing, cellpadding </font>
+					<p> <font color =red> summary</font>: Resumen del contenido y estructura (para buscadores)</p>
+					<p> <font color =red> width</font>: Anchura total de la tabla en pixeles (px) o porcentaje (%)</p>
+					<p> <font color =red> frame</font>: Especifica qué lados de la tabla serán visibles</p>
+					<p><b>void</b>: Ninguno <b>above</b>: Arriba <b>Below</b>: Abajo <b>lhs</b>: Izquierda <b>rhs</b>: Derecha <b>box</b>: Todos</p>
+					<p> <font color =red> rules</font>: Especifica qué líneas de division serán visibles</p>
+					<p><b>none</b>: Ninguna <b>groups</b>: Sólo entre grupos de filas o columnas <b>rows</b>: Sólo entre filas <b>cols</b>: Sólo entre columnas <b>all</b>: Todas</p>
+					<p> <font color =red> cellspacing</font>: Especifica el espacio entre celdas</p>
+					<p> <font color =red> cellpadding</font>: Especifica el espacio entre el borde de una celda y su contenido.</p>
+				<tr>
+					<td><b>Ejemplo:</b>
+					<td>
+			</table>
+		<h4 id="EtTR">Etiqueta &lttr&gt</h4> <!-- tr -->
+			<table border=1 cellpadding=4>
+				<tr>
+					<td><b>Definición:</b>
+					<td> Crea una fila dentro de una tabla.
+				<tr>
+					<td><b>Etiquetas:</b>
+					<td> Etiqueta cierre opcional.
+				<tr>
+					<td><b>Atributos:</b>
+					<td><font color =red>align, valign, char, charoff</font>
+			</table>
+		<h4 id="EtTDTH">Etiquetas &lttd&gt &ltth&gt</h4> <!-- td th -->
+			<table border=1 cellpadding=4>
+				<tr>
+					<td><b>Definición:</b>
+					<td> Sirven para crear una celda bien dentro de una fila, o bien dentro de la cabecera.
+				<tr>
+					<td><b>Etiquetas:</b>
+					<td> Etiqueta cierre opcional.
+				<tr>
+					<td><b>Atributos:</b>
+					<td><font color =red>abbr, axis, headers, scope, rowspan, colspan, align, valign, char, charoff</font>
+					<p> <font color =red> rowspan</font>: Indica el número de filas que ocupa cada celda</p>
+					<p> <font color =red> colspan</font>: Indica el número de columnas que ocupa cada celda</p>					
+			</table>
+		<h4 id="EtCAPTION">Etiqueta &ltcaption&gt</h4> <!-- caption -->
+			<table border=1 cellpadding=4>
+				<tr>
+					<td><b>Definición:</b>
+					<td> Permite poner título en una tabla.
+				<tr>
+					<td><b>Etiquetas:</b>
+					<td> Apertura y cierre obligatorias.
+			</table>
+		<h4 id="EtHEAD_BODY_FOOT">Etiquetas &ltthead&gt &lttbody&gt &lttfoot&gt</h4> <!-- thead, tbody, tfoot -->
+			<table border=1 cellpadding=4>
+				<tr>
+					<td><b>Definición:</b>
+					<td> Permite agrupar filas en la cabecera, el cuerpo, o el pie de la tabla.
+				<tr>
+					<td><b>Etiquetas:</b>
+					<td> Apertura y cierre obligatorias.
+			</table>
+		<h4 id="EtCOLGROUP">Etiqueta &ltcolgroup&gt</h4> <!-- colgroup -->
+			<table border=1 cellpadding=4>
+				<tr>
+					<td><b>Definición:</b>
+					<td> Permite crear grupo de columnas.
+				<tr>
+					<td><b>Etiquetas:</b>
+					<td> Apertura y cierre obligatorias.
+			</table>			
+	</body>
+</html>
